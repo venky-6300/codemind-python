@@ -1,7 +1,7 @@
 n=int(input())
 rev=0
 if n>0:
-    while n:
+     while n:
         rev=rev*10+n%10
         n//=10
         if n==0:
