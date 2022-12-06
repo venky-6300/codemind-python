@@ -1,5 +1,9 @@
-n = int(input())
-if n>100000000 and n<=9999999999:
-    print("Valid")
+n=input()
+l=list(n)
+if len(n)>9:
+    if l[0]=="0":
+        print("Invalid")
+    else:
+        print("Valid")
 else:
     print("Invalid")
