@@ -1,4 +1,4 @@
-n=int(input())
-l=list(map(int,input().split()))
-m=int(input())
-print(l.count(m))
+n = int(input())
+arr = list(map(int,input().split()))
+k = int(input())
+print(arr.count(k))
