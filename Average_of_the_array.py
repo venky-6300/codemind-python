@@ -1,0 +1,5 @@
+n=int(input())
+l=list(map(int,input().split()))
+a=sum(l)
+b=a/len(l)
+print('%.2f'%b)
