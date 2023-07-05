@@ -1,15 +1,16 @@
-n = int(input())
-temp = n
-su,rev=0,0
-while n:
-    rev=rev*10+n%10
-    n//=10
-i = 1
-while rev:
-    su+=(rev%10)**i
-    rev//=10
-    i += 1
-if su==temp:
-    print(True)
+n=int(input())
+a=str(n)
+b=a[::-1]
+c=int(b)
+i=1
+f=[]
+while c:
+    d=c%10
+    c=c//10
+    e=d**i
+    i+=1
+    f.append(e)
+if sum(f)==n:
+    print('True')
 else:
-    print(False)
+    print('False')
