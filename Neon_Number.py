@@ -1,10 +1,15 @@
-n = int(input())
-sq_n = n*n
-sum=0
-while sq_n:
-    sum+=sq_n%10
-    sq_n//=10
-if sum==n:
-    print("Neon Number")
+n=int(input())
+d=[]
+c=1
+b=n*n
+while b:
+    a=b%10
+    b=b//10
+    d.append(a)
+if sum(d)==n:
+    print('Neon Number')
 else:
-    print("Not Neon Number")
+    print('Not Neon Number')
+    
+    
+    
